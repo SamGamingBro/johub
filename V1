@@ -1,0 +1,1103 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ExploitGUI = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Every = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Speed = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Clicktp = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local infjump = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local fly = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local BTools = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local Madeby = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local ChatFr = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local ChatFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Message = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local Blinker = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local PName = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Games = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local Blinker2 = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ImageButton = Instance.new("ImageButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local ImageButton_3 = Instance.new("ImageButton")
+local ImageButton_4 = Instance.new("ImageButton")
+local TextButton_7 = Instance.new("TextButton")
+local Mad = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local einweitblink = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+
+--Properties:
+
+ExploitGUI.Name = "Exploit GUI"
+ExploitGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ExploitGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Open.Name = "Open"
+Open.Parent = ExploitGUI
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.Position = UDim2.new(0, 0, 0.540799975, 0)
+Open.Size = UDim2.new(0, 78, 0, 34)
+Open.Font = Enum.Font.FredokaOne
+Open.Text = "Open GUI"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.200000003, 2)
+UICorner.Parent = Open
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 128, 0)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 191, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(243, 255, 0))}
+UIGradient.Parent = Open
+
+Every.Name = "Every"
+Every.Parent = ExploitGUI
+Every.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Every.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Every.Position = UDim2.new(0.289105058, 0, 0.631941199, 0)
+Every.Size = UDim2.new(0, 448, 0, 265)
+Every.Visible = false
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 2)
+UICorner_2.Parent = Every
+
+Close.Name = "Close"
+Close.Parent = Every
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.892857134, 0, 0, 0)
+Close.Size = UDim2.new(0, 48, 0, 43)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_3.Parent = Close
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(0.54, Color3.fromRGB(255, 200, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 238, 0))}
+UIGradient_2.Parent = Every
+
+TextLabel.Parent = Every
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0650510117, 0, 0.28172344, 0)
+TextLabel.Size = UDim2.new(0, 54, 0, 49)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "16"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Parent = Every
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 234, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.133928567, 0, 0.467811882, 0)
+TextButton.Size = UDim2.new(0, 48, 0, 44)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "+"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 1.000
+TextButton.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_4.Parent = TextButton
+
+Speed.Name = "Speed"
+Speed.Parent = Every
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BackgroundTransparency = 1.000
+Speed.Position = UDim2.new(0.0114795817, 0, 0.188679233, 0)
+Speed.Size = UDim2.new(0, 102, 0, 29)
+Speed.Font = Enum.Font.FredokaOne
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+TextButton_2.Parent = Every
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 234, 0)
+TextButton_2.Position = UDim2.new(0, 0, 0.467811882, 0)
+TextButton_2.Size = UDim2.new(0, 48, 0, 44)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "-"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_5.Parent = TextButton_2
+
+Clicktp.Name = "Clicktp"
+Clicktp.Parent = Every
+Clicktp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clicktp.Position = UDim2.new(0.276785702, 0, 0.177358493, 0)
+Clicktp.Size = UDim2.new(0, 109, 0, 35)
+Clicktp.Font = Enum.Font.FredokaOne
+Clicktp.Text = "Click Tp"
+Clicktp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clicktp.TextScaled = true
+Clicktp.TextSize = 14.000
+Clicktp.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_6.Parent = Clicktp
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_3.Parent = Clicktp
+
+infjump.Name = "infjump"
+infjump.Parent = Every
+infjump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infjump.Position = UDim2.new(0.276785702, 0, 0.332075477, 0)
+infjump.Size = UDim2.new(0, 109, 0, 35)
+infjump.Font = Enum.Font.FredokaOne
+infjump.Text = "Inf Jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextScaled = true
+infjump.TextSize = 14.000
+infjump.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_7.Parent = infjump
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_4.Parent = infjump
+
+fly.Name = "fly"
+fly.Parent = Every
+fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fly.Position = UDim2.new(0.649553537, 0, 0.177358493, 0)
+fly.Size = UDim2.new(0, 109, 0, 35)
+fly.Visible = false
+fly.Font = Enum.Font.FredokaOne
+fly.Text = "Fly"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextScaled = true
+fly.TextSize = 14.000
+fly.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_8.Parent = fly
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_5.Parent = fly
+
+BTools.Name = "BTools"
+BTools.Parent = Every
+BTools.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BTools.Position = UDim2.new(0.649553537, 0, 0.332075477, 0)
+BTools.Size = UDim2.new(0, 109, 0, 35)
+BTools.Font = Enum.Font.FredokaOne
+BTools.Text = "BTools"
+BTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+BTools.TextScaled = true
+BTools.TextSize = 14.000
+BTools.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_9.Parent = BTools
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_6.Parent = BTools
+
+Madeby.Name = "Made by"
+Madeby.Parent = Every
+Madeby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Madeby.BackgroundTransparency = 1.000
+Madeby.Position = UDim2.new(0.372767866, 0, 0.532075465, 0)
+Madeby.Size = UDim2.new(0, 204, 0, 69)
+Madeby.Font = Enum.Font.FredokaOne
+Madeby.Text = "More Options coming soon..."
+Madeby.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby.TextSize = 28.000
+Madeby.TextWrapped = true
+
+Frame.Parent = ExploitGUI
+Frame.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
+Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Frame.Position = UDim2.new(0.291000009, 0, 0.287999988, 0)
+Frame.Size = UDim2.new(0, 99, 0, 265)
+
+UICorner_10.Parent = Frame
+
+TextButton_3.Parent = Frame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_3.Position = UDim2.new(0.151515141, 0, 0.0264150947, 0)
+TextButton_3.Size = UDim2.new(0, 53, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "JH"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 29.000
+TextButton_3.TextTransparency = -0.010
+
+UICorner_11.CornerRadius = UDim.new(10, 0)
+UICorner_11.Parent = TextButton_3
+
+TextButton_4.Parent = Frame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_4.Position = UDim2.new(0.151515141, 0, 0.271698117, 0)
+TextButton_4.Size = UDim2.new(0, 53, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Chat"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 23.000
+TextButton_4.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(10, 0)
+UICorner_12.Parent = TextButton_4
+
+TextButton_5.Parent = Frame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+TextButton_5.Position = UDim2.new(0.151515141, 0, 0.498113215, 0)
+TextButton_5.Size = UDim2.new(0, 53, 0, 50)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Games"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 18.000
+TextButton_5.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(10, 0)
+UICorner_13.Parent = TextButton_5
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0, 12, 0, 206)
+ImageLabel.Size = UDim2.new(0, 59, 0, 57)
+ImageLabel.Visible = false
+ImageLabel.ZIndex = 2
+ImageLabel.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId=1"
+
+ChatFr.Name = "ChatFr"
+ChatFr.Parent = Frame
+ChatFr.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+ChatFr.Position = UDim2.new(0.885917664, 0, -0.00256605446, 0)
+ChatFr.Size = UDim2.new(0, 357, 0, 265)
+ChatFr.Visible = false
+
+UICorner_14.Parent = ChatFr
+
+ChatFrame.Name = "ChatFrame"
+ChatFrame.Parent = ChatFr
+ChatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChatFrame.BackgroundTransparency = 1.000
+ChatFrame.BorderSizePixel = 0
+ChatFrame.Position = UDim2.new(1.70966828e-07, 0, 0, 0)
+ChatFrame.Size = UDim2.new(0.997302234, 0, 0.826415122, 0)
+ChatFrame.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+ChatFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+UIListLayout.Parent = ChatFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+
+Message.Name = "Message"
+Message.Parent = game.StarterGui.Exploit GUI.Frame.ChatFr.MainScript
+Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Message.BackgroundTransparency = 1.000
+Message.ClipsDescendants = true
+Message.Size = UDim2.new(1, 0, 0, 20)
+Message.Font = Enum.Font.SourceSansBold
+Message.Text = "Player_Name: String_Text"
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextSize = 18.000
+Message.TextStrokeTransparency = 0.500
+Message.TextXAlignment = Enum.TextXAlignment.Left
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+Main.Position = UDim2.new(0.9189291, 0, -0.00292831659, 0)
+Main.Size = UDim2.new(0, 354, 0, 265)
+
+UICorner_15.Parent = Main
+
+Blinker.Name = "Blinker"
+Blinker.Parent = Main
+Blinker.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Blinker.Position = UDim2.new(0.91496855, 0, 0.00105642527, 0)
+Blinker.Size = UDim2.new(0, 28, 0, 28)
+
+UICorner_16.Parent = Blinker
+
+TextButton_6.Parent = Main
+TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 119, 179)
+TextButton_6.Position = UDim2.new(0.132768363, 0, 0.626415193, 0)
+TextButton_6.Size = UDim2.new(0, 217, 0, 50)
+TextButton_6.Font = Enum.Font.Ubuntu
+TextButton_6.Text = "Verify"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+UICorner_17.Parent = TextButton_6
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0347236581, 0, -0.0264150947, 0)
+TextLabel_2.Size = UDim2.new(0, 316, 0, 41)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "JoHub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+PName.Name = "PName"
+PName.Parent = Frame
+PName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PName.BackgroundTransparency = 1.000
+PName.BorderSizePixel = 0
+PName.Position = UDim2.new(0, 90, 0, 214)
+PName.Size = UDim2.new(0, 146, 0, 39)
+PName.Visible = false
+PName.Font = Enum.Font.SourceSans
+PName.Text = "Player Name"
+PName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PName.TextScaled = true
+PName.TextSize = 26.000
+PName.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = Frame
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BackgroundTransparency = 1.000
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.79184705, 0, -0.0377358496, 0)
+Close_2.Size = UDim2.new(0, 48, 0, 43)
+Close_2.Visible = false
+Close_2.Font = Enum.Font.FredokaOne
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+UICorner_18.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_18.Parent = Close_2
+
+Games.Name = "Games"
+Games.Parent = Frame
+Games.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+Games.Position = UDim2.new(0.9189291, 0, -0.00292831659, 0)
+Games.Size = UDim2.new(0, 354, 0, 265)
+Games.Visible = false
+
+UICorner_19.Parent = Games
+
+Blinker2.Name = "Blinker2"
+Blinker2.Parent = Games
+Blinker2.BackgroundColor3 = Color3.fromRGB(0, 197, 0)
+Blinker2.Position = UDim2.new(0.91496855, 0, 0.00105642527, 0)
+Blinker2.Size = UDim2.new(0, 28, 0, 28)
+
+UICorner_20.Parent = Blinker2
+
+TextLabel_3.Parent = Games
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(-0.0347236581, 0, -0.0264150947, 0)
+TextLabel_3.Size = UDim2.new(0, 316, 0, 41)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Games"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+ScrollingFrame.Parent = Games
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(44, 47, 51)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.128301889, 0)
+ScrollingFrame.Size = UDim2.new(0, 216, 0, 216)
+
+ImageButton.Parent = ScrollingFrame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Position = UDim2.new(0.264595091, 0, 0.232075483, 0)
+ImageButton.Size = UDim2.new(0, 100, 0, 100)
+ImageButton.Image = "rbxassetid://10343215210"
+
+ImageButton_2.Parent = ScrollingFrame
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.Position = UDim2.new(0.264595091, 0, 0.0245283097, 0)
+ImageButton_2.Size = UDim2.new(0, 100, 0, 100)
+ImageButton_2.Image = "rbxassetid://10343147749"
+
+ImageButton_3.Parent = ScrollingFrame
+ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_3.Position = UDim2.new(0.262633413, 0, 0.467924505, 0)
+ImageButton_3.Size = UDim2.new(0, 100, 0, 100)
+ImageButton_3.Image = "rbxassetid://10343155567"
+
+ImageButton_4.Parent = Games
+ImageButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_4.Position = UDim2.new(0.658192098, 0, 0.152830198, 0)
+ImageButton_4.Size = UDim2.new(0, 100, 0, 100)
+ImageButton_4.Image = "rbxassetid://10343108630"
+
+TextButton_7.Parent = Games
+TextButton_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextButton_7.Position = UDim2.new(0.61016947, 0, 0.558490574, 0)
+TextButton_7.Size = UDim2.new(0, 135, 0, 50)
+TextButton_7.Font = Enum.Font.Ubuntu
+TextButton_7.Text = "Mad CityX"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+Mad.Name = "Mad"
+Mad.Parent = Games
+Mad.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+Mad.Position = UDim2.new(1.07344627, 0, -0.000301882625, 0)
+Mad.Size = UDim2.new(0, 254, 0, 265)
+Mad.Visible = false
+
+UICorner_21.Parent = Mad
+
+einweitblink.Name = "einweitblink"
+einweitblink.Parent = Mad
+einweitblink.BackgroundColor3 = Color3.fromRGB(0, 197, 0)
+einweitblink.Position = UDim2.new(0.88634181, 0, 0.00105642527, 0)
+einweitblink.Size = UDim2.new(0, 28, 0, 28)
+
+UICorner_22.Parent = einweitblink
+
+Frame_2.Parent = Mad
+Frame_2.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+Frame_2.Position = UDim2.new(-1.85039365, 0, 1.11782658, 0)
+Frame_2.Size = UDim2.new(0, 724, 0, 193)
+
+UICorner_23.Parent = Frame_2
+
+TextLabel_4.Parent = Mad
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-0.034924604, 0, -0.0264150947, 0)
+TextLabel_4.Size = UDim2.new(0, 272, 0, 50)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Mad City"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextButton_8.Parent = Mad
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.BackgroundTransparency = 1.000
+TextButton_8.Position = UDim2.new(-0.034924604, 0, -0.0264150947, 0)
+TextButton_8.Size = UDim2.new(0, 48, 0, 45)
+TextButton_8.Font = Enum.Font.Ubuntu
+TextButton_8.Text = "X"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 59.000
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = Mad
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.Position = UDim2.new(-1.76377952, 0, 1.15849054, 0)
+TextButton_9.Size = UDim2.new(0, 200, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Test"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 14.000
+
+-- Scripts:
+
+local function GAGQR_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true	
+	end)
+end
+coroutine.wrap(GAGQR_fake_script)()
+local function MDRQZFX_fake_script() -- ExploitGUI.Script 
+	local script = Instance.new('Script', ExploitGUI)
+
+	print("Thanks for using Speed!")
+	
+end
+coroutine.wrap(MDRQZFX_fake_script)()
+local function EAXTYPC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.Parent.Visible = false
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(EAXTYPC_fake_script)()
+local function FMWSN_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local label = script.Parent.Parent.TextLabel
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed +5
+		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	end)
+end
+coroutine.wrap(FMWSN_fake_script)()
+local function VTZXQXJ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local label = script.Parent.Parent.TextLabel
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed -5
+		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	end)
+end
+coroutine.wrap(VTZXQXJ_fake_script)()
+local function JSQJ_fake_script() -- Clicktp.LocalScript 
+	local script = Instance.new('LocalScript', Clicktp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(JSQJ_fake_script)()
+local function TRAPWJP_fake_script() -- infjump.LocalScript 
+	local script = Instance.new('LocalScript', infjump)
+
+	local UIS = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	local character
+	local humanoid
+	
+	local canDoubleJump = false
+	local hasDoubleJumped = false
+	local oldPower
+	local time_delay = 0.2
+	local jump_multiplier = 1 -- set to 1 for a normal double jump, increase for the second jump to be higher
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		function onJumpRequest()
+			if not character or not humanoid or not character:IsDescendantOf(workspace) or humanoid:GetState() == Enum.HumanoidStateType.Dead then
+				return
+			end
+	
+			if canDoubleJump and not hasDoubleJumped then
+				hasDoubleJumped = false
+				humanoid.JumpPower = oldPower * jump_multiplier
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end
+	
+		local function characterAdded(new)
+			character = new
+			humanoid = new:WaitForChild("Humanoid")
+			hasDoubleJumped = false
+			canDoubleJump = false
+			oldPower = humanoid.JumpPower
+	
+			humanoid.StateChanged:connect(function(old, new)
+				if new == Enum.HumanoidStateType.Landed then
+					canDoubleJump = false
+					hasDoubleJumped = false
+					humanoid.JumpPower = oldPower
+				elseif new == Enum.HumanoidStateType.Freefall then
+					wait(time_delay)
+					canDoubleJump = true
+				end
+			end)
+		end
+	
+		if player.Character then
+			characterAdded(player.Character) 
+		end
+	
+		player.CharacterAdded:connect(characterAdded)
+		UIS.JumpRequest:connect(onJumpRequest)
+	end)
+end
+coroutine.wrap(TRAPWJP_fake_script)()
+local function NRKD_fake_script() -- fly.LocalScript 
+	local script = Instance.new('LocalScript', fly)
+
+	script.Parent.MouseButton1Down:connect(function()
+		repeat wait()
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer
+		local torso = plr.Character.Torso
+		local flying = true
+		local deb = true
+		local ctrl = {f = 0, b = 0, l = 0, r = 0}
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+		local maxspeed = 50
+		local speed = 0
+	
+		function Fly()
+			local bg = Instance.new("BodyGyro", torso)
+			bg.P = 9e4
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			bg.cframe = torso.CFrame
+			local bv = Instance.new("BodyVelocity", torso)
+			bv.velocity = Vector3.new(0,0.1,0)
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+			repeat wait()
+				plr.Character.Humanoid.PlatformStand = true
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+					speed = speed+.5+(speed/maxspeed)
+					if speed > maxspeed then
+						speed = maxspeed
+					end
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+					speed = speed-1
+					if speed < 0 then
+						speed = 0
+					end
+				end
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+				else
+					bv.velocity = Vector3.new(0,0.1,0)
+				end
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+			until not flying
+			ctrl = {f = 0, b = 0, l = 0, r = 0}
+			lastctrl = {f = 0, b = 0, l = 0, r = 0}
+			speed = 0
+			bg:Destroy()
+			bv:Destroy()
+			plr.Character.Humanoid.PlatformStand = false
+		end
+		mouse.KeyDown:connect(function(key)
+			if key:lower() == "e" then
+				if flying then flying = false
+				else
+					flying = true
+					Fly()
+				end
+			elseif key:lower() == "w" then
+				ctrl.f = 1
+			elseif key:lower() == "s" then
+				ctrl.b = -1
+			elseif key:lower() == "a" then
+				ctrl.l = -1
+			elseif key:lower() == "d" then
+				ctrl.r = 1
+			end
+		end)
+		mouse.KeyUp:connect(function(key)
+			if key:lower() == "w" then
+				ctrl.f = 0
+			elseif key:lower() == "s" then
+				ctrl.b = 0
+			elseif key:lower() == "a" then
+				ctrl.l = 0
+			elseif key:lower() == "d" then
+				ctrl.r = 0
+			end
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(NRKD_fake_script)()
+local function YMTGECQ_fake_script() -- BTools.LocalScript 
+	local script = Instance.new('LocalScript', BTools)
+
+	local CloneTool = game.ReplicatedStorage.CloneTool
+	local GameTool = game.ReplicatedStorage.GameTool
+	local HammerTool = game.ReplicatedStorage.HammerTool
+	local Player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		CloneTool:Clone()
+		CloneTool:Clone().Parent = Player.Backpack
+		
+		GameTool:Clone()
+		GameTool:Clone().Parent = Player.Backpack
+		
+		HammerTool:Clone()
+		HammerTool:Clone().Parent = Player.Backpack
+	end)
+end
+coroutine.wrap(YMTGECQ_fake_script)()
+local function DJZAO_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Main.Blinker.Active == true then
+			script.Parent.Parent.Main.Visible = true
+			script.Parent.Parent.ChatFr.Visible = false
+			script.Parent.Parent.Games.Visible = false
+		else
+			print("Please verify yourself.")
+		end
+	end)
+end
+coroutine.wrap(DJZAO_fake_script)()
+local function TLIWGE_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Main.Blinker.Active == true then
+			script.Parent.Parent.ChatFr.Visible = true
+			script.Parent.Parent.Main.Visible = false
+			script.Parent.Parent.Games.Visible = false
+		else
+			print("Please verify yourself.")
+		end
+	end)
+end
+coroutine.wrap(TLIWGE_fake_script)()
+local function AWXPP_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Main.Blinker.Active == true then
+			script.Parent.Parent.Games.Visible = true
+			script.Parent.Parent.Main.Visible = false
+			script.Parent.Parent.ChatFr.Visible = true
+		else
+			print("Please verify yourself.")
+		end
+	end)
+end
+coroutine.wrap(AWXPP_fake_script)()
+local function JAXWL_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId=" .. game.Players.LocalPlayer.UserId
+end
+coroutine.wrap(JAXWL_fake_script)()
+local function EFLRV_fake_script() -- ChatFr.MainScript 
+	local script = Instance.new('LocalScript', ChatFr)
+
+	
+	wait(0.1)
+	
+	script.Parent.ChatFrame.CanvasPosition = Vector2.new(0, 10000000)
+	
+	for i,lchat in pairs(game.Workspace.ChatStorage:GetChildren()) do
+		lchat:Clone().Parent = script.Parent.ChatFrame
+	end
+	
+	game.Workspace.ChatStorage.ChildAdded:connect(function(cld)
+		cld:Clone().Parent = script.Parent.ChatFrame
+	end)
+	game.Players.LocalPlayer.Chatted:Connect(function(text)
+		local name = game.Players.LocalPlayer.Name
+		script.Message.Text = name..": "..text
+		script.Message:Clone().Parent = game.Workspace.ChatStorage
+	end)
+	if game:GetService("UserInputService").GamepadEnabled then
+		print(game.Players.LocalPlayer.Name.." has gamepad enabled")
+		script.Parent.ChatFrame.Size = UDim2.new(0.5, 0,0, 200)
+		script.Parent.XboxChat.Visible = true
+		script.Parent.OpenClose.DpadLeft.Visible = true
+	end
+	
+	local Selected = false
+	game:GetService("UserInputService").InputBegan:connect(function(input)
+		if Selected == false then
+		    if input.UserInputType == Enum.UserInputType.Gamepad1 then
+			    if input.KeyCode == Enum.KeyCode.DPadRight then
+				  script.Parent.XboxChat.Visible = false
+				  script.Parent.XboxTextBox.Visible = true
+				  script.Parent.XboxTextBox:CaptureFocus()
+				  Selected = true
+				end
+			end
+		end
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(input)
+		if Selected == true then
+		    if input.UserInputType == Enum.UserInputType.Gamepad1 then
+			    if input.KeyCode == Enum.KeyCode.ButtonB then
+				  script.Parent.XboxChat.Visible = true
+				  script.Parent.XboxTextBox.Visible = false
+				  script.Parent.XboxTextBox:ReleaseFocus(false)
+				  Selected = false
+				end
+			end
+		end
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(input)
+		if Selected == true then
+		    if input.UserInputType == Enum.UserInputType.Gamepad1 then
+			    if input.KeyCode == Enum.KeyCode.ButtonX then
+				local name = game.Players.LocalPlayer.Name
+				local text = script.Parent.XboxTextBox.Text
+				script.Message.Text = name..": "..text
+				script.Message:Clone().Parent = game.Workspace.ChatStorage
+	    		local ChatService = game:GetService("Chat"):Chat(game.Players.LocalPlayer.Character,text,"Blue")
+				script.Parent.XboxTextBox.Text = ""
+				script.Parent.XboxTextBox.Visible = false
+				script.Parent.XboxChat.Visible = true
+				end
+			end
+		end
+	end)
+	
+	script.Parent.XboxChat.MouseButton1Click:connect(function()
+		script.Parent.XboxChat.Visible = false
+		script.Parent.XboxTextBox.Visible = true
+		script.Parent.XboxTextBox:CaptureFocus()
+	end)
+	
+	script.Parent.XboxTextBox.Send.MouseButton1Click:connect(function()
+		local name = game.Players.LocalPlayer.Name
+		local text = script.Parent.XboxTextBox.Text
+		script.Message.Text = name..": "..text
+		script.Message:Clone().Parent = game.Workspace.ChatStorage
+	    local ChatService = game:GetService("Chat"):Chat(game.Players.LocalPlayer.Character,text,"Blue")
+		script.Parent.XboxTextBox.Text = ""
+		script.Parent.XboxTextBox.Visible = false
+		script.Parent.XboxChat.Visible = true
+	end)
+	
+	local Open = true
+	
+	script.Parent.OpenClose.MouseButton1Click:connect(function()
+		if Open == true then
+			script.Parent.ChatFrame.Visible = false
+			script.Parent.OpenClose.Text = "Open Chat"
+			Open = false
+		elseif Open == false then
+			script.Parent.ChatFrame.Visible = true
+			script.Parent.OpenClose.Text = "Close Chat"
+			Open = true
+		else
+			Open = false
+		end
+	end)
+	
+	game:GetService("UserInputService").InputBegan:connect(function(input)
+		if input.UserInputType == Enum.UserInputType.Gamepad1 then
+			if input.KeyCode == Enum.KeyCode.DPadLeft then
+		    if Open == true then
+			script.Parent.ChatFrame.Visible = false
+			script.Parent.OpenClose.Text = "Show Chat"
+			Open = false
+		elseif Open == false then
+			script.Parent.ChatFrame.Visible = true
+			script.Parent.OpenClose.Text = "Hide Chat"
+			Open = true
+	    else
+			Open = false
+		      end
+		   end
+		end
+	end)
+	
+	if game:GetService("UserInputService").TouchEnabled == true and game:GetService("UserInputService").KeyboardEnabled == false then
+		print(game.Players.LocalPlayer.Name.." Is on Mobile")
+		script.Parent.OpenClose.AnchorPoint = Vector2.new(1, 0.5)
+		script.Parent.OpenClose.Position = UDim2.new(0.99, 0,0.5, 0)
+	end
+end
+coroutine.wrap(EFLRV_fake_script)()
+local function OAQTYX_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if player.Name == "SamDerRobloxBro" or player.Name == "Avbrox" or player.Name == "Alifawwaz3" or player.Name == "Magic_Eagel12" then
+			script.Parent.Parent.Blinker.BackgroundColor3 = Color3.new(0.0980392, 1, 0)
+			script.Parent.Parent.Blinker.Active = true
+			script.Parent.Visible = false
+			script.Parent.Parent.Parent.PName.Visible = true
+			script.Parent.Parent.Parent.ImageLabel.Visible = true
+			script.Parent.Parent.Parent.Close.Visible = true
+		else
+			print("You don't have permission to veify.")
+		end
+	end)
+end
+coroutine.wrap(OAQTYX_fake_script)()
+local function VJJWINJ_fake_script() -- Frame.Drag Gui Script 
+	local script = Instance.new('LocalScript', Frame)
+
+	function dragify(Main)
+	dragToggle = nil
+	dragSpeed = 0.95 -- You can edit this.
+	dragInput = nil
+	dragStart = nil
+	dragPos = nil
+	
+	function updateInput(input)
+	Delta = input.Position - dragStart
+	Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+	end
+	
+	Main.InputBegan:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+	dragToggle = true
+	dragStart = input.Position
+	startPos = Main.Position
+	input.Changed:Connect(function()
+	if (input.UserInputState == Enum.UserInputState.End) then
+	dragToggle = false
+	end
+	end)
+	end
+	end)
+	
+	Main.InputChanged:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+	dragInput = input
+	end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+	if (input == dragInput and dragToggle) then
+	updateInput(input)
+	end
+	end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(VJJWINJ_fake_script)()
+local function WMEPZ_fake_script() -- PName.LocalScript 
+	local script = Instance.new('LocalScript', PName)
+
+	script.Parent.Text = game.Players.LocalPlayer.Name
+end
+coroutine.wrap(WMEPZ_fake_script)()
+local function ZCPS_fake_script() -- Close_2.LocalScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.Parent.Visible = false
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ZCPS_fake_script)()
+local function JDJW_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Parent.Games.Mad.Visible = true
+	end)
+end
+coroutine.wrap(JDJW_fake_script)()
+local function ZVIT_fake_script() -- TextButton_8.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Click:connect(function()
+	 script.Parent.Parent.Parent.Mad.Visible = false
+	end)
+	
+	--                                                               ^
+	--]]	Change "Credit" to the name of the frame                 ^                      
+end
+coroutine.wrap(ZVIT_fake_script)()
+local function BPLFPS_fake_script() -- nil.Instructions 
+	local script = Instance.new('Script', nil)
+
+	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
+	
+	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
+	
+	--SO!
+	
+	
+	----- ~Instructions~ -----
+	
+	-- 1. Make a TextButton 
+	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
+	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
+	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
+	
+	----- ~Done~ -----
+	
+	--And again, thank you. You may want to delete this after.
+	
+	--- ~~Published by LAClout ~~ ---
+	
+	--I don't know if this was already published by anyone else, but I'm sorry if this was.
+	
+	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
+	--	wannabe and say "I made this"
+end
+coroutine.wrap(BPLFPS_fake_script)()
