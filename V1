@@ -70,26 +70,41 @@ local NonPremium = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
 local Blinker2 = Instance.new("Frame")
 local UICorner_24 = Instance.new("UICorner")
-local Games = Instance.new("Frame")
+local UpdateVer = Instance.new("TextLabel")
+local TextButton_7 = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local Blinker2_2 = Instance.new("Frame")
+local Good = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
+local Games = Instance.new("Frame")
+local UICorner_27 = Instance.new("UICorner")
+local Blinker2_2 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local ImageButton_2 = Instance.new("ImageButton")
-local TextButton_7 = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
-local Mad = Instance.new("Frame")
-local UICorner_28 = Instance.new("UICorner")
-local einweitblink = Instance.new("Frame")
-local UICorner_29 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_30 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
 local TextButton_8 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local Mad = Instance.new("Frame")
+local UICorner_30 = Instance.new("UICorner")
+local einweitblink = Instance.new("Frame")
+local UICorner_31 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_32 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
 local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local Close_3 = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
+local UICorner_33 = Instance.new("UICorner")
+local LoadStart = Instance.new("Frame")
+local UICorner_34 = Instance.new("UICorner")
+local Load3 = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local Load2 = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local Load1 = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
+local Failed = Instance.new("TextLabel")
+local Done = Instance.new("TextLabel")
 
 --Properties:
 
@@ -417,6 +432,7 @@ Verify.Parent = Main
 Verify.BackgroundColor3 = Color3.fromRGB(0, 119, 179)
 Verify.Position = UDim2.new(0.169491529, 0, 0.808376312, 0)
 Verify.Size = UDim2.new(0, 217, 0, 50)
+Verify.Visible = false
 Verify.Font = Enum.Font.Ubuntu
 Verify.Text = "Verify"
 Verify.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -540,6 +556,7 @@ NonPremium.Parent = Main
 NonPremium.BackgroundColor3 = Color3.fromRGB(0, 119, 179)
 NonPremium.Position = UDim2.new(0.316926003, 0, 0.562981725, 0)
 NonPremium.Size = UDim2.new(0, 111, 0, 47)
+NonPremium.Visible = false
 NonPremium.Font = Enum.Font.Ubuntu
 NonPremium.Text = "Non-Premium Verify"
 NonPremium.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -557,6 +574,46 @@ Blinker2.Size = UDim2.new(0, 28, 0, 28)
 
 UICorner_24.Parent = Blinker2
 
+UpdateVer.Name = "UpdateVer"
+UpdateVer.Parent = Main
+UpdateVer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateVer.BackgroundTransparency = 1.000
+UpdateVer.Position = UDim2.new(0.0368271954, 0, 0.162264153, 0)
+UpdateVer.Size = UDim2.new(0, 326, 0, 50)
+UpdateVer.Font = Enum.Font.Oswald
+UpdateVer.Text = "Please Update the version"
+UpdateVer.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateVer.TextScaled = true
+UpdateVer.TextSize = 14.000
+UpdateVer.TextWrapped = true
+
+TextButton_7.Parent = Main
+TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.Position = UDim2.new(0.215297446, 0, 0.373584896, 0)
+TextButton_7.Size = UDim2.new(0, 200, 0, 50)
+TextButton_7.Font = Enum.Font.Oswald
+TextButton_7.Text = "Update"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+UICorner_25.Parent = TextButton_7
+
+Good.Name = "Good"
+Good.Parent = Main
+Good.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Good.Position = UDim2.new(0.215297446, 0, 0.596226394, 0)
+Good.Size = UDim2.new(0, 200, 0, 50)
+Good.Font = Enum.Font.SourceSans
+Good.Text = "Use Old"
+Good.TextColor3 = Color3.fromRGB(0, 0, 0)
+Good.TextScaled = true
+Good.TextSize = 14.000
+Good.TextWrapped = true
+
+UICorner_26.Parent = Good
+
 Games.Name = "Games"
 Games.Parent = Frame
 Games.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
@@ -564,7 +621,7 @@ Games.Position = UDim2.new(0.91900003, 0, 0, 0)
 Games.Size = UDim2.new(0, 353, 0, 265)
 Games.Visible = false
 
-UICorner_25.Parent = Games
+UICorner_27.Parent = Games
 
 Blinker2_2.Name = "Blinker2"
 Blinker2_2.Parent = Games
@@ -572,7 +629,7 @@ Blinker2_2.BackgroundColor3 = Color3.fromRGB(0, 197, 0)
 Blinker2_2.Position = UDim2.new(0.91496855, 0, 0.00105642527, 0)
 Blinker2_2.Size = UDim2.new(0, 28, 0, 28)
 
-UICorner_26.Parent = Blinker2_2
+UICorner_28.Parent = Blinker2_2
 
 TextLabel_4.Parent = Games
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -592,18 +649,18 @@ ImageButton_2.Position = UDim2.new(0.0621469244, 0, 0.160377368, 0)
 ImageButton_2.Size = UDim2.new(0, 100, 0, 100)
 ImageButton_2.Image = "rbxassetid://10343108630"
 
-TextButton_7.Parent = Games
-TextButton_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-TextButton_7.Position = UDim2.new(0.0225988831, 0, 0.566037714, 0)
-TextButton_7.Size = UDim2.new(0, 128, 0, 50)
-TextButton_7.Font = Enum.Font.Ubuntu
-TextButton_7.Text = "Mad CityX"
-TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.TextScaled = true
-TextButton_7.TextSize = 14.000
-TextButton_7.TextWrapped = true
+TextButton_8.Parent = Games
+TextButton_8.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+TextButton_8.Position = UDim2.new(0.0225988831, 0, 0.566037714, 0)
+TextButton_8.Size = UDim2.new(0, 128, 0, 50)
+TextButton_8.Font = Enum.Font.Ubuntu
+TextButton_8.Text = "Mad CityX"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
 
-UICorner_27.Parent = TextButton_7
+UICorner_29.Parent = TextButton_8
 
 Mad.Name = "Mad"
 Mad.Parent = Games
@@ -612,7 +669,7 @@ Mad.Position = UDim2.new(1.07344627, 0, -0.000301882625, 0)
 Mad.Size = UDim2.new(0, 254, 0, 265)
 Mad.Visible = false
 
-UICorner_28.Parent = Mad
+UICorner_30.Parent = Mad
 
 einweitblink.Name = "einweitblink"
 einweitblink.Parent = Mad
@@ -620,14 +677,14 @@ einweitblink.BackgroundColor3 = Color3.fromRGB(0, 197, 0)
 einweitblink.Position = UDim2.new(0.88634181, 0, 0.00105642527, 0)
 einweitblink.Size = UDim2.new(0, 28, 0, 28)
 
-UICorner_29.Parent = einweitblink
+UICorner_31.Parent = einweitblink
 
 Frame_2.Parent = Mad
 Frame_2.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
 Frame_2.Position = UDim2.new(-1.85039365, 0, 1.11782658, 0)
 Frame_2.Size = UDim2.new(0, 724, 0, 193)
 
-UICorner_30.Parent = Frame_2
+UICorner_32.Parent = Frame_2
 
 TextLabel_5.Parent = Mad
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -641,26 +698,26 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
-TextButton_8.Parent = Mad
-TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.BackgroundTransparency = 1.000
-TextButton_8.Position = UDim2.new(-0.034924604, 0, -0.0264150947, 0)
-TextButton_8.Size = UDim2.new(0, 48, 0, 45)
-TextButton_8.Font = Enum.Font.Ubuntu
-TextButton_8.Text = "X"
-TextButton_8.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_8.TextScaled = true
-TextButton_8.TextSize = 59.000
-TextButton_8.TextWrapped = true
-
 TextButton_9.Parent = Mad
 TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.Position = UDim2.new(-1.76377952, 0, 1.15849054, 0)
-TextButton_9.Size = UDim2.new(0, 200, 0, 50)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "Test"
-TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.TextSize = 14.000
+TextButton_9.BackgroundTransparency = 1.000
+TextButton_9.Position = UDim2.new(-0.034924604, 0, -0.0264150947, 0)
+TextButton_9.Size = UDim2.new(0, 48, 0, 45)
+TextButton_9.Font = Enum.Font.Ubuntu
+TextButton_9.Text = "X"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 59.000
+TextButton_9.TextWrapped = true
+
+TextButton_10.Parent = Mad
+TextButton_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.Position = UDim2.new(-1.76377952, 0, 1.15849054, 0)
+TextButton_10.Size = UDim2.new(0, 200, 0, 50)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "Test"
+TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.TextSize = 14.000
 
 ScrollingFrame.Parent = Games
 ScrollingFrame.Active = true
@@ -683,20 +740,85 @@ Close_3.TextScaled = true
 Close_3.TextSize = 14.000
 Close_3.TextWrapped = true
 
-UICorner_31.CornerRadius = UDim.new(0.200000003, 2)
-UICorner_31.Parent = Close_3
+UICorner_33.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_33.Parent = Close_3
+
+LoadStart.Name = "LoadStart"
+LoadStart.Parent = Frame
+LoadStart.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadStart.Position = UDim2.new(-0.13131313, 0, 0.350943387, 0)
+LoadStart.Size = UDim2.new(0, 468, 0, 42)
+LoadStart.Visible = false
+
+UICorner_34.Parent = LoadStart
+
+Load3.Name = "Load3"
+Load3.Parent = LoadStart
+Load3.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+Load3.Position = UDim2.new(0.238316253, 0, -0.00599999726, 0)
+Load3.Size = UDim2.new(0, 238, 0, 42)
+Load3.Visible = false
+
+UICorner_35.Parent = Load3
+
+Load2.Name = "Load2"
+Load2.Parent = LoadStart
+Load2.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+Load2.Position = UDim2.new(-0.00100000005, 0, -0.00600000005, 0)
+Load2.Size = UDim2.new(0, 124, 0, 42)
+Load2.Visible = false
+
+UICorner_36.Parent = Load2
+
+Load1.Name = "Load1"
+Load1.Parent = LoadStart
+Load1.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+Load1.Position = UDim2.new(0.723387718, 0, -0.00619959831, 0)
+Load1.Size = UDim2.new(0, 129, 0, 42)
+Load1.Visible = false
+
+UICorner_37.Parent = Load1
+
+Failed.Name = "Failed"
+Failed.Parent = Frame
+Failed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Failed.BackgroundTransparency = 1.000
+Failed.Position = UDim2.new(1.14141417, 0, 1.06415105, 0)
+Failed.Size = UDim2.new(0, 242, 0, 50)
+Failed.Visible = false
+Failed.Font = Enum.Font.Oswald
+Failed.Text = "Update Failed.!"
+Failed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Failed.TextScaled = true
+Failed.TextSize = 14.000
+Failed.TextWrapped = true
+
+Done.Name = "Done"
+Done.Parent = Frame
+Done.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Done.BackgroundTransparency = 1.000
+Done.Position = UDim2.new(0.686868668, 0, 1.11698115, 0)
+Done.Size = UDim2.new(0, 373, 0, 50)
+Done.Visible = false
+Done.Font = Enum.Font.Oswald
+Done.Text = "Done!"
+Done.TextColor3 = Color3.fromRGB(255, 255, 255)
+Done.TextScaled = true
+Done.TextSize = 14.000
+Done.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Done.TextWrapped = true
 
 -- Scripts:
 
-local function NFLCVU_fake_script() -- Open.LocalScript 
+local function XEPB_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = true	
 	end)
 end
-coroutine.wrap(NFLCVU_fake_script)()
-local function HBVB_fake_script() -- Close.LocalScript 
+coroutine.wrap(XEPB_fake_script)()
+local function SPBV_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.Parent.Visible = false
@@ -704,8 +826,8 @@ local function HBVB_fake_script() -- Close.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(HBVB_fake_script)()
-local function GYTOH_fake_script() -- infjump.LocalScript 
+coroutine.wrap(SPBV_fake_script)()
+local function NFWAK_fake_script() -- infjump.LocalScript 
 	local script = Instance.new('LocalScript', infjump)
 
 	local UIS = game:GetService("UserInputService")
@@ -759,8 +881,8 @@ local function GYTOH_fake_script() -- infjump.LocalScript
 		UIS.JumpRequest:connect(onJumpRequest)
 	end)
 end
-coroutine.wrap(GYTOH_fake_script)()
-local function STGSGW_fake_script() -- fly.LocalScript 
+coroutine.wrap(NFWAK_fake_script)()
+local function IWZRHVA_fake_script() -- fly.LocalScript 
 	local script = Instance.new('LocalScript', fly)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -846,8 +968,8 @@ local function STGSGW_fake_script() -- fly.LocalScript
 		Fly()
 	end)
 end
-coroutine.wrap(STGSGW_fake_script)()
-local function IFBPS_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(IWZRHVA_fake_script)()
+local function OJKOTLJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -860,8 +982,8 @@ local function IFBPS_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IFBPS_fake_script)()
-local function FYZWZ_fake_script() -- Misc.LocalScript 
+coroutine.wrap(OJKOTLJ_fake_script)()
+local function CAFAA_fake_script() -- Misc.LocalScript 
 	local script = Instance.new('LocalScript', Misc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -874,8 +996,8 @@ local function FYZWZ_fake_script() -- Misc.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FYZWZ_fake_script)()
-local function HWSH_fake_script() -- GamesFR.LocalScript 
+coroutine.wrap(CAFAA_fake_script)()
+local function LKOE_fake_script() -- GamesFR.LocalScript 
 	local script = Instance.new('LocalScript', GamesFR)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -888,14 +1010,14 @@ local function HWSH_fake_script() -- GamesFR.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HWSH_fake_script)()
-local function CKVNRM_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(LKOE_fake_script)()
+local function HOOFI_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId=" .. game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(CKVNRM_fake_script)()
-local function AUYQCK_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(HOOFI_fake_script)()
+local function HYDBV_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local label = script.Parent.Parent.TextLabel
@@ -907,8 +1029,8 @@ local function AUYQCK_fake_script() -- TextButton_2.LocalScript
 		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 	end)
 end
-coroutine.wrap(AUYQCK_fake_script)()
-local function ALEJJX_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HYDBV_fake_script)()
+local function UYEUM_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local label = script.Parent.Parent.TextLabel
@@ -920,8 +1042,8 @@ local function ALEJJX_fake_script() -- TextButton_3.LocalScript
 		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 	end)
 end
-coroutine.wrap(ALEJJX_fake_script)()
-local function YWAYHH_fake_script() -- Clicktp.LocalScript 
+coroutine.wrap(UYEUM_fake_script)()
+local function XQXE_fake_script() -- Clicktp.LocalScript 
 	local script = Instance.new('LocalScript', Clicktp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -937,8 +1059,8 @@ local function YWAYHH_fake_script() -- Clicktp.LocalScript
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(YWAYHH_fake_script)()
-local function PJBQDVY_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(XQXE_fake_script)()
+local function RZKQK_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local label = script.Parent.Parent.TextLabel
@@ -950,8 +1072,8 @@ local function PJBQDVY_fake_script() -- TextButton_5.LocalScript
 		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
 	end)
 end
-coroutine.wrap(PJBQDVY_fake_script)()
-local function EOBOJUI_fake_script() -- Verify.LocalScript 
+coroutine.wrap(RZKQK_fake_script)()
+local function QDQMJO_fake_script() -- Verify.LocalScript 
 	local script = Instance.new('LocalScript', Verify)
 
 	local player = game.Players.LocalPlayer
@@ -965,22 +1087,21 @@ local function EOBOJUI_fake_script() -- Verify.LocalScript
 			script.Parent.Parent.Parent.ImageLabel.Visible = true
 			script.Parent.Parent.Parent.Close.Visible = true
 			script.Parent.Parent.NonPremium.Visible = false
-			script.Parent.Parent.Profile.name.Text.TextColor3 = Color3.new(1, 0, 0)
 		else
 			print("You don't have permission to veify.")
 		end
 	end)
 end
-coroutine.wrap(EOBOJUI_fake_script)()
-local function PDLA_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(QDQMJO_fake_script)()
+local function ASFPKSX_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Profile.Visible = true	
 	end)
 end
-coroutine.wrap(PDLA_fake_script)()
-local function KJLRO_fake_script() -- name.LocalScript 
+coroutine.wrap(ASFPKSX_fake_script)()
+local function PYRXE_fake_script() -- name.LocalScript 
 	local script = Instance.new('LocalScript', name)
 
 	local player = game.Players.LocalPlayer
@@ -992,20 +1113,20 @@ local function KJLRO_fake_script() -- name.LocalScript
 		script.Parent.TextColor3 = Color3.new(0.776471, 0.776471, 0.776471)
 	end
 end
-coroutine.wrap(KJLRO_fake_script)()
-local function CBDNH_fake_script() -- prof.LocalScript 
+coroutine.wrap(PYRXE_fake_script)()
+local function JDGB_fake_script() -- prof.LocalScript 
 	local script = Instance.new('LocalScript', prof)
 
 	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&userId=" .. game.Players.LocalPlayer.UserId
 end
-coroutine.wrap(CBDNH_fake_script)()
-local function GEFCB_fake_script() -- originname.LocalScript 
+coroutine.wrap(JDGB_fake_script)()
+local function KWCFEK_fake_script() -- originname.LocalScript 
 	local script = Instance.new('LocalScript', originname)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 end
-coroutine.wrap(GEFCB_fake_script)()
-local function FKSN_fake_script() -- Close_2.LocalScript 
+coroutine.wrap(KWCFEK_fake_script)()
+local function KYDNW_fake_script() -- Close_2.LocalScript 
 	local script = Instance.new('LocalScript', Close_2)
 
 	script.Parent.Parent.Visible = false
@@ -1013,8 +1134,8 @@ local function FKSN_fake_script() -- Close_2.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(FKSN_fake_script)()
-local function CQLL_fake_script() -- NonPremium.LocalScript 
+coroutine.wrap(KYDNW_fake_script)()
+local function BXZHICN_fake_script() -- NonPremium.LocalScript 
 	local script = Instance.new('LocalScript', NonPremium)
 
 	local player = game.Players.LocalPlayer
@@ -1034,8 +1155,65 @@ local function CQLL_fake_script() -- NonPremium.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CQLL_fake_script)()
-local function THBIM_fake_script() -- Frame.Drag Gui Script 
+coroutine.wrap(BXZHICN_fake_script)()
+local function LQLIQHA_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.LoadStart.Visible = true
+		if script.Parent.Parent.Parent.LoadStart.Visible == true then
+			script.Parent.Parent.Parent.LoadStart.Load1.Visible = true
+			wait(4)
+			script.Parent.Parent.Parent.LoadStart.Load3.Visible = true
+			wait(4)
+			script.Parent.Parent.Parent.LoadStart.Load2.Visible = true
+			wait(3)
+			script.Parent.Parent.Parent.LoadStart.Visible = false
+			script.Parent.Parent.Parent.Failed.Visible = true 
+			wait(2)
+			script.Parent.Parent.Parent.Failed.Visible = false
+			script.Parent.Parent.Parent.LoadStart.Load1.Visible = false
+			script.Parent.Parent.Parent.LoadStart.Load2.Visible = false
+			script.Parent.Parent.Parent.LoadStart.Load3.Visible = false
+		else
+			if script.Parent.Parent.Blinker.Active then
+				script.Parent.Parent.Parent.Failed.Text "Everything failed please restart!!!!!!"
+			end
+		end
+	end)
+end
+coroutine.wrap(LQLIQHA_fake_script)()
+local function JCGYZRH_fake_script() -- Good.LocalScript 
+	local script = Instance.new('LocalScript', Good)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.LoadStart.Visible = true
+		if script.Parent.Parent.Parent.LoadStart.Visible == true then
+			script.Parent.Parent.Parent.LoadStart.Load1.Visible = true
+			wait(4)
+			script.Parent.Parent.Parent.LoadStart.Load3.Visible = true
+			wait(4)
+			script.Parent.Parent.Parent.LoadStart.Load2.Visible = true
+			wait(3)
+			script.Parent.Parent.Parent.LoadStart.Visible = false
+			script.Parent.Parent.Parent.Done.Visible = true 
+			wait(2)
+			script.Parent.Parent.Parent.Done.Visible = false
+			script.Parent.Parent.NonPremium.Visible = true
+			script.Parent.Parent.Verify.Visible = true
+			script.Parent.Parent.Good.Visible = false
+			script.Parent.Parent.TextButton.Visible = false
+			script.Parent.Parent.UpdateVer.Visible = false
+		end
+	end)
+	
+end
+coroutine.wrap(JCGYZRH_fake_script)()
+local function VHBJESD_fake_script() -- Frame.Drag Gui Script 
 	local script = Instance.new('LocalScript', Frame)
 
 	function dragify(Main)
@@ -1079,17 +1257,17 @@ local function THBIM_fake_script() -- Frame.Drag Gui Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(THBIM_fake_script)()
-local function EJODG_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
+coroutine.wrap(VHBJESD_fake_script)()
+local function GRPVX_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
 			script.Parent.Parent.Parent.Games.Mad.Visible = true
 	end)
 end
-coroutine.wrap(EJODG_fake_script)()
-local function VHHIOOY_fake_script() -- TextButton_8.Open/Close (PUT ME IN A TEXTBUTTON) 
-	local script = Instance.new('LocalScript', TextButton_8)
+coroutine.wrap(GRPVX_fake_script)()
+local function KYBRFKF_fake_script() -- TextButton_9.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:connect(function()
 	 script.Parent.Parent.Parent.Mad.Visible = false
@@ -1098,8 +1276,8 @@ local function VHHIOOY_fake_script() -- TextButton_8.Open/Close (PUT ME IN A TEX
 	--                                                               ^
 	--]]	Change "Credit" to the name of the frame                 ^                      
 end
-coroutine.wrap(VHHIOOY_fake_script)()
-local function RMBRAYY_fake_script() -- Close_3.LocalScript 
+coroutine.wrap(KYBRFKF_fake_script)()
+local function HESPJ_fake_script() -- Close_3.LocalScript 
 	local script = Instance.new('LocalScript', Close_3)
 
 	script.Parent.Parent.Visible = false
@@ -1110,4 +1288,4 @@ local function RMBRAYY_fake_script() -- Close_3.LocalScript
 		script.Parent.Parent.Main.Visible = true
 	end)
 end
-coroutine.wrap(RMBRAYY_fake_script)()
+coroutine.wrap(HESPJ_fake_script)()
